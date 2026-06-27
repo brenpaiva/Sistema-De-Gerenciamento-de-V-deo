@@ -269,16 +269,6 @@ python scripts/benchmark.py --gpu cpu --frames 300 --size 640x360 --render-size 
 python -m gesec_viewer --config config/demo.yaml --gpu auto --hw-decode auto
 ```
 
-## Como Eu Evoluiria Para Um VMS Real
-
-- Layouts dinâmicos: 1x1, 2x2, 3x3 e videowall.
-- Autenticação e rotação segura de credenciais RTSP.
-- Health-check por câmera, métricas e alertas.
-- Buffer circular para gravação e replay curto.
-- Decodificação por hardware com pipeline FFmpeg/GStreamer dedicado.
-- Backpressure mais agressivo com fila limitada por câmera.
-- Persistência de configurações e perfis de hardware.
-
 ## Observações
 
 O foco da entrega é demonstrar arquitetura, concorrência, renderização sem travar UI, fallback CPU/GPU e entendimento do fluxo de vídeo. A demo sintética existe para que a avaliação seja reproduzível mesmo sem acesso a câmeras reais; os RTSPs públicos ficam como demonstração extra.
