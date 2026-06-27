@@ -1,8 +1,8 @@
 # GESEC Mini VMS Viewer
 
-Repositório: `INSERIR_LINK_DO_REPOSITORIO_AQUI`
 
-Aplicação desktop em Python para o desafio técnico de visualização de câmeras. A entrega simula um mini VMS com PyQt5, OpenCV, captura em threads separadas, renderização fluida na UI e processamento com GPU opcional.
+
+Aplicação desktop em Python para de visualização de câmeras. A entrega simula um mini VMS com PyQt5, OpenCV, captura em threads separadas, renderização fluida na UI e processamento com GPU opcional.
 
 ## O Que Foi Entregue
 
