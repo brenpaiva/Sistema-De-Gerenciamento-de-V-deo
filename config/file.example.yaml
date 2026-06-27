@@ -1,0 +1,19 @@
+app:
+  title: "GESEC Mini VMS Viewer - Arquivos"
+  columns: 2
+  render_size: [640, 360]
+
+cameras:
+  - id: demo_file_01
+    name: "Arquivo Demo 01"
+    type: file
+    url: "../media/demo_cam1.mp4"
+    loop: true
+    target_fps: 30
+
+  - id: demo_file_02
+    name: "Arquivo Demo 02"
+    type: file
+    url: "../media/demo_cam2.mp4"
+    loop: true
+    target_fps: 30

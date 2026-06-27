@@ -1,0 +1,46 @@
+app:
+  title: "GESEC Mini VMS Viewer - Demo Sintética"
+  columns: 2
+  render_size: [640, 360]
+  reconnect_delay_seconds: 2.0
+
+cameras:
+  - id: demo_portaria
+    name: "Portaria - Demo"
+    type: synthetic
+    protocol: synthetic
+    url: "synthetic://portaria"
+    active: true
+    loop: true
+    target_fps: 30
+    render_size: [640, 360]
+
+  - id: demo_corredor
+    name: "Corredor - Demo"
+    type: synthetic
+    protocol: synthetic
+    url: "synthetic://corredor"
+    active: true
+    loop: true
+    target_fps: 30
+    render_size: [640, 360]
+
+  - id: demo_estacionamento
+    name: "Estacionamento - Demo"
+    type: synthetic
+    protocol: synthetic
+    url: "synthetic://estacionamento"
+    active: true
+    loop: true
+    target_fps: 30
+    render_size: [640, 360]
+
+  - id: demo_recepcao
+    name: "Recepção - Demo"
+    type: synthetic
+    protocol: synthetic
+    url: "synthetic://recepcao"
+    active: true
+    loop: true
+    target_fps: 30
+    render_size: [640, 360]

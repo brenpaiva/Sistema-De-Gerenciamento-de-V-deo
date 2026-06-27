@@ -1,0 +1,96 @@
+app:
+  title: "GESEC Mini VMS Viewer - RTSP Público"
+  columns: 3
+  render_size: [426, 240]
+  reconnect_delay_seconds: 3.0
+
+cameras:
+  - id: rtsp_public_01
+    name: "RTSP Público 01"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_02
+    name: "RTSP Público 02"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_03
+    name: "RTSP Público 03"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_04
+    name: "RTSP Público 04"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_05
+    name: "RTSP Público 05"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_06
+    name: "RTSP Público 06"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_07
+    name: "RTSP Público 07"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_08
+    name: "RTSP Público 08"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]
+
+  - id: rtsp_public_09
+    name: "RTSP Público 09"
+    type: rtsp
+    protocol: rtsp
+    url: "rtsp://9627b0bf2a7b.entrypoint.cloud.wowza.com:1935/app-p5260J38/66abe4b9_stream1"
+    active: true
+    loop: false
+    target_fps: 12
+    render_size: [426, 240]

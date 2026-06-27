@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+docs/
+logs/
+*.egg-info/
+
+# Demo artifacts generated locally
+media/
+screenshots/
+recordings/
+snapshots/
+benchmarks/
+config/user.yaml
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
