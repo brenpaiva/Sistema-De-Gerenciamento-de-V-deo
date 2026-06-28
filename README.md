@@ -1,5 +1,9 @@
 # GESEC Mini VMS Viewer
 
+<video src="assets/gravacao.mp4" controls autoplay loop muted playsinline width="100%"></video>
+
+Se o player acima não aparecer no seu navegador do GitHub, abra a gravação aqui: [assets/gravacao.mp4](assets/gravacao.mp4)
+
 
 
 Aplicação desktop em Python para de visualização de câmeras. A entrega simula um mini VMS com PyQt5, OpenCV, captura em threads separadas, renderização fluida na UI e processamento com GPU opcional.
