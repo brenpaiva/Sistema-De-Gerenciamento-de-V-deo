@@ -1,10 +1,8 @@
 # GESEC Mini VMS Viewer
 
-<a href="https://raw.githubusercontent.com/brenpaiva/Sistema-De-Gerenciamento-de-V-deo/main/assets/gravacao.mp4">
-  <img src="assets/gravacao-capa.png" alt="Gravação do app" width="100%">
-</a>
+![Gravação do app](assets/gravacao.gif)
 
-Se a capa não carregar, abra a gravação aqui: [assets/gravacao.mp4](assets/gravacao.mp4)
+Se o GIF não carregar, abra a gravação aqui: [assets/gravacao.mp4](assets/gravacao.mp4)
 
 
 
