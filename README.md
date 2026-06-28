@@ -1,10 +1,10 @@
 # GESEC Mini VMS Viewer
 
-<video controls autoplay loop muted playsinline width="100%">
-  <source src="https://raw.githubusercontent.com/brenpaiva/Sistema-De-Gerenciamento-de-V-deo/main/assets/gravacao.mp4" type="video/mp4">
-</video>
+<a href="https://raw.githubusercontent.com/brenpaiva/Sistema-De-Gerenciamento-de-V-deo/main/assets/gravacao.mp4">
+  <img src="assets/gravacao-capa.png" alt="Gravação do app" width="100%">
+</a>
 
-Se o player acima não aparecer no seu navegador do GitHub, abra a gravação aqui: [assets/gravacao.mp4](assets/gravacao.mp4)
+Se a capa não carregar, abra a gravação aqui: [assets/gravacao.mp4](assets/gravacao.mp4)
 
 
 
