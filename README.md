@@ -57,34 +57,6 @@ pip install -r requirements-cuda.txt
 python -m gesec_viewer --config config/demo.yaml --gpu torch
 ```
 
-## Rodando Com Docker
-
-Sim, a aplicação roda em Docker. Como ela usa PyQt5, o container precisa acessar o servidor gráfico do host.
-
-No Linux ou WSL com X11/WSLg:
-
-```bash
-chmod +x scripts/run_docker_x11.sh
-./scripts/run_docker_x11.sh
-```
-
-Ou com Docker Compose:
-
-```bash
-xhost +local:docker
-docker compose up --build viewer
-```
-
-Para trocar config ou modo de GPU:
-
-```bash
-CONFIG=config/rtsp.example.yaml GPU_MODE=cpu ./scripts/run_docker_x11.sh
-CONFIG=config/demo.yaml GPU_MODE=cuda USE_NVIDIA=1 ./scripts/run_docker_x11.sh
-CONFIG=config/demo.yaml GPU_MODE=opencl HW_DECODE=off ./scripts/run_docker_x11.sh
-```
-
-No Windows puro, use um servidor X como VcXsrv/X410 e rode com `DISPLAY=host.docker.internal:0`. O caminho mais simples continua sendo WSLg, porque ele já entrega o servidor gráfico para apps Linux.
-
 Observação sobre GPU: `opencv-python` instalado via `pip` normalmente não vem compilado com CUDA nem com todos os caminhos de decodificação por hardware. Por isso o app tenta hardware decode via propriedades do OpenCV/FFmpeg quando possível e mantém fallback de processamento entre OpenCV CUDA, PyTorch CUDA, OpenCL e CPU.
 
 Para forçar CPU:
@@ -171,7 +143,7 @@ A UI também não tenta renderizar todos os frames recebidos. Ela mantém o fram
 | Requisito | Implementação |
 |---|---|
 | Interface PyQt5 | `MainWindow` em `gesec_viewer/widgets.py` |
-| Dois ou mais quadrantes | Layouts 1/2/4/9 e `config/demo.yaml` com 4 streams sintéticos |
+| Dois ou mais quadrantes | Layouts 1/2/4/9 e `config/demo.yaml` com 2 streams sintéticos |
 | Iniciar/Pausar/Parar | Botões conectados no monitor |
 | FPS real na tela | Overlay por tile contado no `paintEvent()` |
 | Captura fora da UI thread | `CameraWorker` executado em `QThread` |

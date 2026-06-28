@@ -1,5 +1,6 @@
 import os
 import sys
+from dataclasses import replace
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
@@ -11,6 +12,7 @@ from PyQt5.QtCore import QObject, pyqtSignal
 from PyQt5.QtWidgets import QApplication
 
 from gesec_viewer.camera_store import CameraStore
+from gesec_viewer.config import CameraConfig
 from gesec_viewer.gpu import DeviceInfo
 from gesec_viewer.widgets import MainWindow
 
@@ -47,13 +49,21 @@ def test_sidebar_removes_map_and_logs():
 def test_visible_and_capture_cameras_follow_layout_and_recording():
     app = _app()
     store = CameraStore("config/demo.yaml")
-    window = MainWindow(store.load(), _device(), store)
+    config = store.load()
+    hidden_camera = CameraConfig(
+        id="hidden",
+        name="Oculta",
+        type="synthetic",
+        protocol="synthetic",
+        url="synthetic://hidden",
+    )
+    config = replace(config, cameras=(*config.cameras, hidden_camera))
+    window = MainWindow(config, _device(), store)
 
     window._layout_slots = 2
     assert len(window._visible_cameras()) == 2
     assert len(window._capture_cameras()) == 2
 
-    hidden_camera = window.app_config.cameras[3]
     window.recording_manager.start(hidden_camera)
 
     assert hidden_camera in window._capture_cameras()

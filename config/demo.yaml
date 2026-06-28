@@ -24,23 +24,3 @@ cameras:
     loop: true
     target_fps: 30
     render_size: [640, 360]
-
-  - id: demo_estacionamento
-    name: "Estacionamento - Demo"
-    type: synthetic
-    protocol: synthetic
-    url: "synthetic://estacionamento"
-    active: true
-    loop: true
-    target_fps: 30
-    render_size: [640, 360]
-
-  - id: demo_recepcao
-    name: "Recepção - Demo"
-    type: synthetic
-    protocol: synthetic
-    url: "synthetic://recepcao"
-    active: true
-    loop: true
-    target_fps: 30
-    render_size: [640, 360]

@@ -4,11 +4,11 @@ from gesec_viewer.config import CameraConfig, load_config
 from gesec_viewer.camera_store import CameraStore
 
 
-def test_load_demo_config_has_four_synthetic_cameras():
+def test_load_demo_config_has_two_synthetic_cameras():
     config = load_config("config/demo.yaml")
 
     assert config.title == "GESEC Mini VMS Viewer - Demo Sintética"
-    assert len(config.cameras) == 4
+    assert len(config.cameras) == 2
     assert config.columns == 2
     assert config.cameras[0].type == "synthetic"
     assert config.cameras[0].url.startswith("synthetic://")
