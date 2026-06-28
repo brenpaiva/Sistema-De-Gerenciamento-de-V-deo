@@ -1,6 +1,8 @@
 # GESEC Mini VMS Viewer
 
-<video src="assets/gravacao.mp4" controls autoplay loop muted playsinline width="100%"></video>
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="https://raw.githubusercontent.com/brenpaiva/Sistema-De-Gerenciamento-de-V-deo/main/assets/gravacao.mp4" type="video/mp4">
+</video>
 
 Se o player acima não aparecer no seu navegador do GitHub, abra a gravação aqui: [assets/gravacao.mp4](assets/gravacao.mp4)
 
